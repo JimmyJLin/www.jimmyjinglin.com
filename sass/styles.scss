@@ -1,8 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-@media only screen and (min-device-width: 736px){
-  @import "desktop";
+$main_color: transparent;
+
+
+body{
+
 }
+
+h3{
+  margin:0 auto;
+  background-color: $main_color;
+  z-index:0;
+  text-align:center;
+  font-size:10em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color:#0080FF;
+  opacity:0.7;
+}
+
+
+
+
+
+
+// Mobile & Tablet @media imports
 
 // iPhone 4
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
