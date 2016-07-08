@@ -10,7 +10,6 @@ const server = app.listen(port);
 const request = require('request');
 
 // sass setting
-const connect = require('connect');
 const sassMiddleware = require('node-sass-middleware');
 const srcPath = __dirname + '/sass';
 const destPath = path.join(__dirname + '/public/css');
