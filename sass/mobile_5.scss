@@ -1,12 +1,12 @@
 // This is the css for the iPone 5
 
+$main_color: #ff0000;
+
 body{
-  margin:0;
-  background: url('/images/graphy.png');
-  font-family: 'Helvetica Neue', sans-serif;
-  h1{
+
+  h3{
     margin:0 auto;
-    background-color: Red;
+    background-color: $main_color;
     z-index:0;
     text-align:center;
     font-size:20em;
@@ -14,14 +14,5 @@ body{
     color:#0080FF;
     opacity:0.7;
   }
-  h1, iframe{
-    width:500px;
-    margin:0 auto;
-  }
-}
 
-iframe{
-  background:#fff;
-  display:block;
-  height:320px;
 }
