@@ -1,26 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-body{
-  margin:0;
-  background: url('/images/graphy.png');
-  font-family: 'Helvetica Neue', sans-serif;
-  h1{
-    margin:0 auto;
-    z-index:0;
-    text-align:center;
-    font-size:20em;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color:#0080FF;
-    opacity:0.7;
-  }
-  h1, iframe{
-    width:500px;
-    margin:0 auto;
-  }
+@media only screen and (min-device-width: 736px){
+  @import "desktop";
 }
 
-iframe{
-  background:#fff;
-  display:block;
-  height:320px;
+// iPhone 4
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  @import "mobile_4";
+}
+
+// iPhone 5 & 5S
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  @import "mobile_5";
+}
+
+// iPhone 6 & 6S
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  @import "mobile_6";
+}
+
+// iPhone 6plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  @import "mobile_6plus";
+}
+
+// Tablets
+@media only screen and (min-device-width: 736px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  @import "tablet";
 }
