@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js \"gulp css:watch\" \"gulp scripts:watch\" \"gulp images:watch\"",
-    "build": "gulp css:build && gulp images:build && gulp scripts:build",
+    "build": "nodemon server.js && gulp css:build && gulp images:build && gulp scripts:build",
     "postinstall": "npm run build"
   },
   "engines": {
-  "node": "6.1.0",
-  "npm": "3.8.6"
+    "node": "6.1.0",
+    "npm": "3.8.6"
   },
   "author": "Jimmy Lin",
   "license": "ISC",
