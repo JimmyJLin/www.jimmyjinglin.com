@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js \"gulp css:watch\" \"gulp scripts:watch\" \"gulp images:watch\"",
-    "build": "nodemon server.js && gulp css:build && gulp images:build && gulp scripts:build",
+    "build": "gulp css:build && gulp images:build && gulp scripts:build",
     "postinstall": "npm run build"
   },
   "engines": {
@@ -31,7 +31,6 @@
     "gulp-load-plugins": "^1.4.0",
     "gulp-rev": "^7.1.2",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.9.1",
-    "nodemon": "^1.11.0"
+    "gulp-sourcemaps": "^1.9.1"
   }
 }
