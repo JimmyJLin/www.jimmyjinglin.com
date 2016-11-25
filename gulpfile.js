@@ -20,7 +20,7 @@ gulp.task('css', function(){
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('./public/css'))
-    .pipe(livereload())
+    .pipe($.livereload())
 })
 gulp.task('css:build', ['css'], function(){
   return gulp.src('app/sass/main.scss')
@@ -34,7 +34,7 @@ gulp.task('css:build', ['css'], function(){
 gulp.task('scripts', function(){
   gulp.src('app/js/main.js')
       .pipe(gulp.dest('./public/js'))
-      .pipe(livereload())
+      .pipe($.livereload())
 })
 gulp.task('scripts:build', ['scripts'], function(){
   return gulp.src('app/js/main.js')
@@ -50,7 +50,7 @@ gulp.task('images', function() {
     './app/images/**/*'
   ])
   .pipe(gulp.dest('./public/images'))
-  .pipe(livereload())
+  .pipe($.livereload())
 })
 gulp.task('images:build', ['images'], function() {
   return gulp.src('app/images/**/*')
@@ -63,7 +63,7 @@ gulp.task('images:build', ['images'], function() {
 // ejs
 gulp.task('ejs', function(){
   return gulp.src('views/**/*.ejs')
-  .pipe(livereload())
+  .pipe($.livereload())
 })
 
 // gulp watch tasks
