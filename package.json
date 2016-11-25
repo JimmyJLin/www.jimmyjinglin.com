@@ -9,6 +9,10 @@
     "build": "gulp css:build && gulp images:build && gulp scripts:build",
     "postinstall": "npm run build"
   },
+  "engines": {
+  "node": "6.1.0",
+  "npm": "3.8.6"
+  },
   "author": "Jimmy Lin",
   "license": "ISC",
   "dependencies": {
