@@ -9,19 +9,6 @@ const app = express();
 const server = app.listen(port);
 const request = require('request');
 
-// sass setting
-const sassMiddleware = require('node-sass-middleware');
-const srcPath = __dirname + '/sass';
-const destPath = path.join(__dirname + '/public/css');
-
-// sassMiddleware
-app.use(sassMiddleware({
-  src: srcPath,
-  dest: destPath,
-  debug: true,
-  outputStyle: 'compressed',
-  prefix: '/prefix'
-}));
 
 // parse incoming forms
 app.use(bodyParser.urlencoded({ extended: false }));
