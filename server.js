@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 const app = express();
 const server = app.listen(port);
-const request = require('request');
+// const request = require('request');
 
 
 /* express server setting  */

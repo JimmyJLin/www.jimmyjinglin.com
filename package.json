@@ -1,5 +1,5 @@
 {
-  "name": "basic_starter",
+  "name": "node_express_basic_starter",
   "version": "1.0.0",
   "description": "Node Express SASS Gulp Starter",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "build": "gulp css:build && gulp images:build && gulp scripts:build",
     "postinstall": "npm run build"
   },
-  "author": "",
+  "author": "Jimmy Lin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -19,9 +19,7 @@
     "jquery": "^3.0.0",
     "morgan": "^1.7.0",
     "node-sass": "^3.8.0",
-    "path": "^0.12.7",
-    "request": "^2.72.0",
-    "serve-static": "^1.11.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
