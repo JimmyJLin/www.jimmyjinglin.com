@@ -4,8 +4,7 @@
   "description": "Node Express SASS Gulp Starter",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js \"gulp css:watch\" \"gulp scripts:watch\" \"gulp images:watch\"",
+    "start": "gulp serve",
     "build": "gulp css:build && gulp images:build && gulp scripts:build",
     "postinstall": "npm run build"
   },
@@ -22,7 +21,10 @@
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.4.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-rev": "^7.1.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
@@ -31,13 +33,5 @@
     "node-sass": "^3.8.0",
     "nodemon": "^1.11.0",
     "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-load-plugins": "^1.4.0",
-    "gulp-rev": "^7.1.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.9.1"
   }
 }

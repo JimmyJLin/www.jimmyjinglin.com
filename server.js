@@ -8,6 +8,20 @@ const port = process.env.PORT || 3000;
 const app = express();
 const server = app.listen(port);
 
+// let styleSrc;
+// let javascriptSrc;
+// if (process.env.NODE_ENV === 'production'){
+//   console.log("Production Mode")
+//   let cssRefManifest = require('./public/css/rev-manifest.json')
+//   let jsRefManifest = require('./public/js/rev-manifest.json')
+//
+//   styleSrc = `/${cssRefManifest['main.css']}`;
+//   javascriptSrc = `/${jsRefManifest['main.js']}`
+// } else {
+//   console.log("Development Mode")
+//   styleSrc = './app/sass/main.scss';
+//   javascriptSrc = './app/js/main.js';
+// }
 
 /* express server setting  */
 app.use(logger('dev'));
