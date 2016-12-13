@@ -2,6 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
+const engine = require('ejs-mate');
 
 /* app setting */
 const port = process.env.PORT || 3000;
@@ -15,13 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.set('views', './views');
+app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 
 /* routes */
+const mainRoutes = require('./routes/main');
 
-
-
-/* api routes */
-app.get('/', function(req, res){
-  res.render('pages/index')
-})
+app.use('/', mainRoutes);

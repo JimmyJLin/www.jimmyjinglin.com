@@ -1,5 +1,5 @@
 $(function(){
-  console.log('script file loaded')
+  console.log('script file loaded');
 
   // Toggle Buttons - add class active if clicked and remove if click again
   $('.button.toggle').on("click", function(){
@@ -8,15 +8,5 @@ $(function(){
     } else {
       $(this).addClass('selected').text('Voted')
     }
-  })
-
-
-
-
-
-
-
-
-
-
-})
+  });
+});
