@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp css:build && gulp images:build && gulp scripts:build",
+    "build": "gulp css:build && gulp images:build && gulp scripts:build && gulp jquery:build",
     "postinstall": "npm run build"
   },
   "engines": {

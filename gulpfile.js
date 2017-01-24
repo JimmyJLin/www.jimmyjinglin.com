@@ -44,6 +44,20 @@ gulp.task('scripts:build', ['scripts'], function(){
     .pipe(gulp.dest('./public/js'))
 })
 
+// jquery
+gulp.task('jquery', function(){
+  gulp.src('app/js/jquery.js')
+      .pipe(gulp.dest('./public/js'))
+      .pipe($.livereload())
+})
+gulp.task('jquery:build', ['jquery'], function(){
+  return gulp.src('app/js/main.js')
+    .pipe($.rev())
+    .pipe(gulp.dest('./public/js'))
+    .pipe($.rev.manifest())
+    .pipe(gulp.dest('./public/js'))
+})
+
 // images
 gulp.task('images', function() {
   gulp.src([
@@ -70,7 +84,8 @@ gulp.task('ejs', function(){
 gulp.task('watch', function(){
   livereload.listen();
   gulp.watch('app/sass/**/*.scss', ['css'])
-  gulp.watch('app/js/*.js', ['scripts'])
+  gulp.watch('app/js/main.js', ['scripts'])
+  gulp.watch('app/js/jquery.js', ['jquery'])
   gulp.watch('app/images/**/*', ['images'])
   gulp.watch('views/**/*.ejs', ['ejs'])
 })
