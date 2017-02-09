@@ -3,7 +3,19 @@
 
 // nav_bar stylings
 #nav_bar{
+  font-family: 'Roboto Slab', serif;
+  
+  .navbar-default{
+    background-color: transparent;
+    border-color: transparent;
 
+    .navbar-brand, #links{
+      color: $main_color_white;
+    }
+    .navbar-brand:hover, #links:hover{
+      color: $main_color_red;
+    }
+  }
 
 }
 
