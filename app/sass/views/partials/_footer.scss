@@ -3,7 +3,67 @@
 
 // styling for footer
 #footer{
+  // footer background color
+  background-color: $main_color_dark_grey;
+  height: 400px;
 
+  // font
+  color: $main_color_white;
+  font-family: 'Roboto Slab', serif;
+
+  h1, p, h4{
+    padding-top: 2%;
+    text-align: center;
+  }
+  .row{
+    padding-top: 2%;
+    height: 125px;
+    display: flex;
+
+    #github{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      background:url('/images/social-medias/github.png');
+      background-size: 80px 80px;
+      background-repeat: no-repeat;
+    }
+    #linkedin{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      background:url('/images/social-medias/linkedin.png');
+      background-size: 80px 80px;
+      background-repeat: no-repeat;
+    }
+    #resume{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      background:url('/images/social-medias/resume.png');
+      background-size: 80px 80px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  h1{
+    font-size: 2.5em;
+  }
+
+  p{
+    padding-top: 3%;
+    font-size: .85em;
+  }
+
+  h4{
+    a{
+      color: $main_color_white;
+    }
+    a:hover{
+      color: $main_color_red;
+      text-decoration: none;
+    }
+  }
 }
 
 

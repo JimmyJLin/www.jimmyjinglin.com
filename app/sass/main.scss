@@ -1,6 +1,9 @@
 // variables import
 @import "variables";
 
+// font import
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100');
+
 // import from various pages
 @import "views/pages/index.scss";
 @import "views/partials/navbar.scss";
