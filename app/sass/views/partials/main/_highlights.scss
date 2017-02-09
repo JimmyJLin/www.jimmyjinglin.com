@@ -1,68 +1,62 @@
 // import variables
 @import "variables";
 
-// styling for footer
-#footer{
-  // footer background color
-  background-color: $main_color_dark_grey;
-  height: 400px;
+// index top page
+#highlights{
+  height: 450px;
+  width: 100%;
+  background-color: $main_color_grey;
 
-  // font
-  color: $main_color_white;
-  font-family: 'Roboto Slab', serif;
-
-  h1, p, h4{
-    padding-top: 2%;
+  #title{
+    padding-top: 35px;
+    font-size: 3em;
     text-align: center;
     font-weight: 100;
+    color: #333333;
   }
+
   .row{
-    padding-top: 2%;
-    height: 125px;
-    display: flex;
+    padding-top: 25px;
 
-    #github{
-      width: 100%;
-      height: auto;
-      margin: 0;
-      background:url('/images/social-medias/github.png');
-      background-size: 60px 60px;
+    p{
+      text-align: center;
+    }
+
+    #one{
+      margin-left: 20%;
+      width: 200px;
+      height: 200px;
+      // margin: 0;
+      background:url('/images/social-medias/usmc.png');
+      background-size: 120px 180px;
       background-repeat: no-repeat;
     }
-    #linkedin{
-      width: 100%;
-      height: auto;
-      margin: 0;
-      background:url('/images/social-medias/linkedin.png');
-      background-size: 60px 60px;
+    #two{
+      margin-left: 21%;
+      width: 200px;
+      height: 200px;
+      // margin: 0;
+      background:url('/images/social-medias/education.png');
+      background-size: 120px 180px;
       background-repeat: no-repeat;
     }
-    #resume{
-      width: 100%;
-      height: auto;
-      margin: 0;
-      background:url('/images/social-medias/resume.png');
-      background-size: 60px 60px;
+    #three{
+      margin-left: 21%;
+      width: 200px;
+      height: 200px;
+      // margin: 0;
+      background:url('/images/social-medias/work.png');
+      background-size: 120px 180px;
       background-repeat: no-repeat;
     }
-  }
-
-  h1{
-    font-size: 2.5em;
-  }
-
-  p{
-    padding-top: 3%;
-    font-size: .85em;
-  }
-
-  h4{
-    a{
-      color: $main_color_white;
-    }
-    a:hover{
-      color: $main_color_red;
-      text-decoration: none;
+    #four{
+      margin-left: 21%;
+      width: 200px;
+      height: 200px;
+      // margin: 0;
+      background:url('/images/social-medias/entrepreneur.png');
+      background-size: 120px 180px;
+      background-repeat: no-repeat;
     }
   }
 }
